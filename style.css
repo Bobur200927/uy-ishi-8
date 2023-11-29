@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    position: relative;
+    border-radius: 15px;
+    width: 100px;
+    height: 250px;
+    border: 3px solid black;
+    margin: auto;
+    top: 200px;
+}
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+    width: 90px;
+    height: 90px;
+
+    /* Animation */
+
+    animation: circle 2s alternate infinite forwards;
+    animation-delay: 0s;
+}
+
+@keyframes circle {
+    0%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(157px);
+    }
+}
